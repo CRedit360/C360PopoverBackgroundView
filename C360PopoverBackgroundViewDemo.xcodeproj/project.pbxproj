@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F67B2368173A95690014873A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67B2367173A95690014873A /* UIKit.framework */; };
+		F67B236A173A95690014873A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67B2369173A95690014873A /* Foundation.framework */; };
+		F67B236C173A95690014873A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67B236B173A95690014873A /* CoreGraphics.framework */; };
+		F67B2372173A95690014873A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F67B2370173A95690014873A /* InfoPlist.strings */; };
+		F67B2374173A95690014873A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F67B2373173A95690014873A /* main.m */; };
+		F67B2378173A95690014873A /* C360AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F67B2377173A95690014873A /* C360AppDelegate.m */; };
+		F67B237A173A95690014873A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F67B2379173A95690014873A /* Default.png */; };
+		F67B237C173A95690014873A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F67B237B173A95690014873A /* Default@2x.png */; };
+		F67B237E173A95690014873A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F67B237D173A95690014873A /* Default-568h@2x.png */; };
+		F67B238F173A96100014873A /* C360DemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F67B238C173A96100014873A /* C360DemoController.m */; };
+		F67B2390173A96100014873A /* C360DemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F67B238E173A96100014873A /* C360DemoView.m */; };
+		F67B2394173A961D0014873A /* C360PopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = F67B2393173A961D0014873A /* C360PopoverBackgroundView.m */; };
+		F67B239B173A97CE0014873A /* C360DemoContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = F67B2398173A97CE0014873A /* C360DemoContentController.m */; };
+		F67B239C173A97CE0014873A /* C360DemoContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F67B239A173A97CE0014873A /* C360DemoContentView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F67B2364173A95690014873A /* C360PopoverBackgroundViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C360PopoverBackgroundViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F67B2367173A95690014873A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F67B2369173A95690014873A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F67B236B173A95690014873A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F67B236F173A95690014873A /* C360PopoverBackgroundViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "C360PopoverBackgroundViewDemo-Info.plist"; sourceTree = "<group>"; };
+		F67B2371173A95690014873A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F67B2373173A95690014873A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F67B2375173A95690014873A /* C360PopoverBackgroundViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "C360PopoverBackgroundViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		F67B2376173A95690014873A /* C360AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C360AppDelegate.h; sourceTree = "<group>"; };
+		F67B2377173A95690014873A /* C360AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C360AppDelegate.m; sourceTree = "<group>"; };
+		F67B2379173A95690014873A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F67B237B173A95690014873A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F67B237D173A95690014873A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F67B238B173A96100014873A /* C360DemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C360DemoController.h; sourceTree = "<group>"; };
+		F67B238C173A96100014873A /* C360DemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C360DemoController.m; sourceTree = "<group>"; };
+		F67B238D173A96100014873A /* C360DemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C360DemoView.h; sourceTree = "<group>"; };
+		F67B238E173A96100014873A /* C360DemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C360DemoView.m; sourceTree = "<group>"; };
+		F67B2392173A961D0014873A /* C360PopoverBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C360PopoverBackgroundView.h; sourceTree = "<group>"; };
+		F67B2393173A961D0014873A /* C360PopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C360PopoverBackgroundView.m; sourceTree = "<group>"; };
+		F67B2397173A97CE0014873A /* C360DemoContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C360DemoContentController.h; sourceTree = "<group>"; };
+		F67B2398173A97CE0014873A /* C360DemoContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C360DemoContentController.m; sourceTree = "<group>"; };
+		F67B2399173A97CE0014873A /* C360DemoContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C360DemoContentView.h; sourceTree = "<group>"; };
+		F67B239A173A97CE0014873A /* C360DemoContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C360DemoContentView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F67B2361173A95690014873A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67B2368173A95690014873A /* UIKit.framework in Frameworks */,
+				F67B236A173A95690014873A /* Foundation.framework in Frameworks */,
+				F67B236C173A95690014873A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F67B235B173A95690014873A = {
+			isa = PBXGroup;
+			children = (
+				F67B2391173A961D0014873A /* C360PopoverBackgroundView */,
+				F67B236D173A95690014873A /* C360PopoverBackgroundViewDemo */,
+				F67B2366173A95690014873A /* Frameworks */,
+				F67B2365173A95690014873A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F67B2365173A95690014873A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F67B2364173A95690014873A /* C360PopoverBackgroundViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F67B2366173A95690014873A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F67B2367173A95690014873A /* UIKit.framework */,
+				F67B2369173A95690014873A /* Foundation.framework */,
+				F67B236B173A95690014873A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F67B236D173A95690014873A /* C360PopoverBackgroundViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F67B238A173A96060014873A /* Screens */,
+				F67B2376173A95690014873A /* C360AppDelegate.h */,
+				F67B2377173A95690014873A /* C360AppDelegate.m */,
+				F67B236E173A95690014873A /* Supporting Files */,
+			);
+			path = C360PopoverBackgroundViewDemo;
+			sourceTree = "<group>";
+		};
+		F67B236E173A95690014873A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F67B236F173A95690014873A /* C360PopoverBackgroundViewDemo-Info.plist */,
+				F67B2370173A95690014873A /* InfoPlist.strings */,
+				F67B2373173A95690014873A /* main.m */,
+				F67B2375173A95690014873A /* C360PopoverBackgroundViewDemo-Prefix.pch */,
+				F67B2379173A95690014873A /* Default.png */,
+				F67B237B173A95690014873A /* Default@2x.png */,
+				F67B237D173A95690014873A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F67B238A173A96060014873A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F67B2396173A97B20014873A /* Content screen */,
+				F67B2395173A97880014873A /* Demo screen */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		F67B2391173A961D0014873A /* C360PopoverBackgroundView */ = {
+			isa = PBXGroup;
+			children = (
+				F67B2392173A961D0014873A /* C360PopoverBackgroundView.h */,
+				F67B2393173A961D0014873A /* C360PopoverBackgroundView.m */,
+			);
+			path = C360PopoverBackgroundView;
+			sourceTree = "<group>";
+		};
+		F67B2395173A97880014873A /* Demo screen */ = {
+			isa = PBXGroup;
+			children = (
+				F67B238B173A96100014873A /* C360DemoController.h */,
+				F67B238C173A96100014873A /* C360DemoController.m */,
+				F67B238D173A96100014873A /* C360DemoView.h */,
+				F67B238E173A96100014873A /* C360DemoView.m */,
+			);
+			name = "Demo screen";
+			sourceTree = "<group>";
+		};
+		F67B2396173A97B20014873A /* Content screen */ = {
+			isa = PBXGroup;
+			children = (
+				F67B2397173A97CE0014873A /* C360DemoContentController.h */,
+				F67B2398173A97CE0014873A /* C360DemoContentController.m */,
+				F67B2399173A97CE0014873A /* C360DemoContentView.h */,
+				F67B239A173A97CE0014873A /* C360DemoContentView.m */,
+			);
+			name = "Content screen";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F67B2363173A95690014873A /* C360PopoverBackgroundViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F67B2387173A95690014873A /* Build configuration list for PBXNativeTarget "C360PopoverBackgroundViewDemo" */;
+			buildPhases = (
+				F67B2360173A95690014873A /* Sources */,
+				F67B2361173A95690014873A /* Frameworks */,
+				F67B2362173A95690014873A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = C360PopoverBackgroundViewDemo;
+			productName = C360PopoverBackgroundViewDemo;
+			productReference = F67B2364173A95690014873A /* C360PopoverBackgroundViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F67B235C173A95690014873A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = C360;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Simon Booth";
+			};
+			buildConfigurationList = F67B235F173A95690014873A /* Build configuration list for PBXProject "C360PopoverBackgroundViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F67B235B173A95690014873A;
+			productRefGroup = F67B2365173A95690014873A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F67B2363173A95690014873A /* C360PopoverBackgroundViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F67B2362173A95690014873A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67B2372173A95690014873A /* InfoPlist.strings in Resources */,
+				F67B237A173A95690014873A /* Default.png in Resources */,
+				F67B237C173A95690014873A /* Default@2x.png in Resources */,
+				F67B237E173A95690014873A /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F67B2360173A95690014873A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67B2374173A95690014873A /* main.m in Sources */,
+				F67B2378173A95690014873A /* C360AppDelegate.m in Sources */,
+				F67B238F173A96100014873A /* C360DemoController.m in Sources */,
+				F67B2390173A96100014873A /* C360DemoView.m in Sources */,
+				F67B2394173A961D0014873A /* C360PopoverBackgroundView.m in Sources */,
+				F67B239B173A97CE0014873A /* C360DemoContentController.m in Sources */,
+				F67B239C173A97CE0014873A /* C360DemoContentView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F67B2370173A95690014873A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F67B2371173A95690014873A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F67B2385173A95690014873A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F67B2386173A95690014873A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F67B2388173A95690014873A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "C360PopoverBackgroundViewDemo/C360PopoverBackgroundViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "C360PopoverBackgroundViewDemo/C360PopoverBackgroundViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F67B2389173A95690014873A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "C360PopoverBackgroundViewDemo/C360PopoverBackgroundViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "C360PopoverBackgroundViewDemo/C360PopoverBackgroundViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F67B235F173A95690014873A /* Build configuration list for PBXProject "C360PopoverBackgroundViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F67B2385173A95690014873A /* Debug */,
+				F67B2386173A95690014873A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F67B2387173A95690014873A /* Build configuration list for PBXNativeTarget "C360PopoverBackgroundViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F67B2388173A95690014873A /* Debug */,
+				F67B2389173A95690014873A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F67B235C173A95690014873A /* Project object */;
+}

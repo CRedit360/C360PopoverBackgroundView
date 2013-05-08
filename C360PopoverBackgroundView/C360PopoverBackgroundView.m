@@ -31,8 +31,6 @@
 @property (nonatomic, strong) UIImageView *leftArrowView;
 @property (nonatomic, strong) UIImageView *lowerLeftEdgeView;
 
-
-
 @end
 
 @implementation C360PopoverBackgroundView
