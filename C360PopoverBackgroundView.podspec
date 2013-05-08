@@ -5,7 +5,8 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/CRedit360/C360PopoverBackgroundView"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = 'Simon Booth'
-  s.source       = { :git => "https://github.com/CRedit360/C360PopoverBackgroundView.git", :tag => s.version.to_s }  
+  s.source       = { :git => "https://github.com/CRedit360/C360PopoverBackgroundView.git", :tag => s.version.to_s }
   s.source_files = 'C360PopoverBackgroundView'
+  s.framework  = 'UIKit'
   s.requires_arc = true
 end
