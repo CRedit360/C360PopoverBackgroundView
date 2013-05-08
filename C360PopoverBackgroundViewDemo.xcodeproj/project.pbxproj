@@ -47,6 +47,9 @@
 		F67B2398173A97CE0014873A /* C360DemoContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C360DemoContentController.m; sourceTree = "<group>"; };
 		F67B2399173A97CE0014873A /* C360DemoContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C360DemoContentView.h; sourceTree = "<group>"; };
 		F67B239A173A97CE0014873A /* C360DemoContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C360DemoContentView.m; sourceTree = "<group>"; };
+		F67B239D173AB4F90014873A /* C360PopoverBackgroundView.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = C360PopoverBackgroundView.podspec; sourceTree = SOURCE_ROOT; };
+		F67B239E173AB4F90014873A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		F67B239F173AB5560014873A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,9 @@
 		F67B236E173A95690014873A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F67B239F173AB5560014873A /* LICENSE */,
+				F67B239D173AB4F90014873A /* C360PopoverBackgroundView.podspec */,
+				F67B239E173AB4F90014873A /* README.md */,
 				F67B236F173A95690014873A /* C360PopoverBackgroundViewDemo-Info.plist */,
 				F67B2370173A95690014873A /* InfoPlist.strings */,
 				F67B2373173A95690014873A /* main.m */,
