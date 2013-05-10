@@ -6,7 +6,7 @@ C360PopoverBackgroundView is a tintable UIPopoverBackgroundView subclass which m
 To use C360PopoverBackgroundView in your project, add this line to your podfile:
 
 ```ruby
-pod 'WorkflowSchema', '~> 0.2.0'
+pod 'C360PopoverBackgroundView', '~> 1.0.0'
 ```
 
 and then run: 
