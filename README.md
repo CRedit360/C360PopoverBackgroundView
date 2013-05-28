@@ -56,7 +56,7 @@ or you can use [UISS](https://github.com/robertwijas/UISS):
     ...
 ```
 
-you can change the borderColor or the glowColor the same way:
+You can change the borderColor or the glowColor the same way:
 
 ```ObjC
     [[C360PopoverBackgroundView appearance] setBorderColor:[UIColor grayColor]];
