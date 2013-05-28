@@ -13,5 +13,7 @@
 }
 
 @property (nonatomic, strong) UIColor *tintColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic, strong) UIColor *borderColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic, strong) UIColor *glowColor UI_APPEARANCE_SELECTOR;
 
 @end

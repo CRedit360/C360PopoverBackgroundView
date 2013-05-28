@@ -277,8 +277,11 @@
     UIColor *tintColor = self.tintColor;
     if (!tintColor) tintColor = [UIColor colorWithRed:0 green:0.06 blue:0.18 alpha:1];
     
-    UIColor *glowColor = [UIColor colorWithWhite:1 alpha:0.2];
-    UIColor *borderColor = [UIColor colorWithWhite:0 alpha:1];
+    UIColor *glowColor = self.glowColor;
+    if (!glowColor) glowColor = [UIColor colorWithWhite:1 alpha:0.2];
+    
+    UIColor *borderColor = self.borderColor;
+    if (!borderColor) borderColor = [UIColor colorWithWhite:0 alpha:1];
     
     CGFloat cornerRadius = self.cornerRadius;
     CGFloat highlightDepth = self.highlightDepth;
