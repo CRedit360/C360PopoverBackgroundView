@@ -8,7 +8,9 @@
 #import "C360PopoverBackgroundView.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface C360PopoverBackgroundView ()
+@interface C360PopoverBackgroundView () {
+    BOOL _needsImageUpdate;
+}
 
 @property (nonatomic, assign, readonly) CGFloat cornerRadius;
 @property (nonatomic, assign, readonly) CGFloat highlightDepth;
@@ -33,9 +35,7 @@
 
 @end
 
-@implementation C360PopoverBackgroundView {
-    BOOL _needsImageUpdate;
-}
+@implementation C360PopoverBackgroundView
 
 + (CGFloat)arrowHeight
 {
@@ -95,6 +95,11 @@
         [self setNeedsImageUpdate];
     }
     return self;
+}
+
+- (void)dealloc
+{
+    [[NSRunLoop mainRunLoop] cancelPerformSelectorsWithTarget:self];
 }
 
 - (CGFloat)arrowOffset
@@ -286,26 +291,28 @@
     self.upperLeftEdgeView.frame =      CGRectMake(x1,      y2,     x2-x1,      ly3-y2);
 }
 
-- (void)didMoveToWindow {
-    if (self.window && _needsImageUpdate) {
+- (void)didMoveToWindow
+{
+    if (self.window && _needsImageUpdate)
+    {
         [self updateImagesIfNeeded];
     }
 }
 
-- (void)setNeedsImageUpdate {
+- (void)setNeedsImageUpdate
+{
     _needsImageUpdate = YES;
 
-    if (self.window) {
-        [self performSelector:@selector(updateImagesIfNeeded) withObject:nil afterDelay:0.0001];
+    if (self.window)
+    {
+        [[NSRunLoop mainRunLoop] performSelector:@selector(updateImagesIfNeeded) target:self argument:nil order:0 modes:@[NSDefaultRunLoopMode]];
     }
 }
 
+
 - (void)updateImagesIfNeeded
 {
-    if (!_needsImageUpdate) {
-        return;
-    }
-
+    if (!_needsImageUpdate) return;
     _needsImageUpdate = NO;
 
     UIColor *tintColor = self.tintColor;
