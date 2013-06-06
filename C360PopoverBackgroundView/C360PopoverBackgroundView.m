@@ -33,7 +33,9 @@
 
 @end
 
-@implementation C360PopoverBackgroundView
+@implementation C360PopoverBackgroundView {
+    BOOL _needsImageUpdate;
+}
 
 + (CGFloat)arrowHeight
 {
@@ -90,7 +92,7 @@
             subview.alpha = 0.95;
         }
         
-        [self updateImages];
+        [self setNeedsImageUpdate];
     }
     return self;
 }
@@ -157,7 +159,19 @@
 - (void)setTintColor:(UIColor *)tintColor
 {
     _tintColor = tintColor;
-    [self updateImages];
+    [self setNeedsImageUpdate];
+}
+
+- (void)setBorderColor:(UIColor *)borderColor
+{
+    _borderColor = borderColor;
+    [self setNeedsImageUpdate];
+}
+
+- (void)setGlowColor:(UIColor *)glowColor
+{
+    _glowColor = glowColor;
+    [self setNeedsImageUpdate];
 }
 
 - (CGFloat)cornerRadius
@@ -269,11 +283,31 @@
     self.bottomLeftCornerView.frame =   CGRectMake(x1,      y6,     x2-x1,      y7-y6);
     self.lowerLeftEdgeView.frame =      CGRectMake(x1,      ly5,    x2-x1,      y6-ly5);
     self.leftArrowView.frame =          CGRectMake(x0,      ly3,    x2-x0,      ly5-ly3);
-    self.upperLeftEdgeView.frame =      CGRectMake(x1,      y2,     x2-x1,      ly3-y2);    
+    self.upperLeftEdgeView.frame =      CGRectMake(x1,      y2,     x2-x1,      ly3-y2);
 }
 
-- (void)updateImages
+- (void)didMoveToWindow {
+    if (self.window && _needsImageUpdate) {
+        [self updateImagesIfNeeded];
+    }
+}
+
+- (void)setNeedsImageUpdate {
+    _needsImageUpdate = YES;
+
+    if (self.window) {
+        [self performSelector:@selector(updateImagesIfNeeded) withObject:nil afterDelay:0.0001];
+    }
+}
+
+- (void)updateImagesIfNeeded
 {
+    if (!_needsImageUpdate) {
+        return;
+    }
+
+    _needsImageUpdate = NO;
+
     UIColor *tintColor = self.tintColor;
     if (!tintColor) tintColor = [UIColor colorWithRed:0 green:0.06 blue:0.18 alpha:1];
     
